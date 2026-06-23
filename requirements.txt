@@ -1,0 +1,37 @@
+# ===== Web UI =====
+streamlit>=1.38.0
+
+# ===== YouTube & Audio/Video Input Handling =====
+yt-dlp>=2024.8.6
+pydub>=0.25.1
+moviepy>=1.0.3          # optional: only needed if uploaded files can be video (extracts audio track)
+# NOTE: pydub, moviepy, and Whisper all rely on ffmpeg being installed on your SYSTEM (not pip-installable).
+#   Windows: https://www.gyan.dev/ffmpeg/builds/  (add bin folder to PATH)
+#   Linux:   sudo apt install ffmpeg
+#   macOS:   brew install ffmpeg
+
+# ===== Local Transcription (Whisper) =====
+openai-whisper>=20231117
+torch>=2.3.0
+# NOTE: Whisper's built-in task="translate" converts Hindi (or any language) -> English directly,
+#   so no separate translation library is required.
+# NOTE: On Windows, if you don't have a CUDA GPU, install the CPU-only torch build instead:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+# ===== LLM Orchestration (LangChain LCEL + Mistral) =====
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langchain-mistralai>=0.2.0
+langchain-text-splitters>=0.3.0
+
+# ===== RAG Pipeline: Vector Store + Embeddings =====
+chromadb>=0.5.5
+langchain-huggingface>=0.1.0
+sentence-transformers>=3.0.0
+
+# ===== Export (PDF / TXT) =====
+fpdf2>=2.7.9
+
+# ===== Utilities =====
+python-dotenv>=1.0.1
