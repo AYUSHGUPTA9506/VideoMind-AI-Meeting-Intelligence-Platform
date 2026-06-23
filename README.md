@@ -167,5 +167,5 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 👤 Author
 
 **Your Name**
-- GitHub: [@your-username](https://github.com/your-username)
-- LinkedIn: [your-linkedin](https://linkedin.com/in/your-linkedin)
+- GitHub: [AYUSHGUPTA9506](https://github.com/AYUSHGUPTA9506/)
+- LinkedIn: [AYUSH GUPTA](https://www.linkedin.com/in/ayush-gupta-800976357/)
